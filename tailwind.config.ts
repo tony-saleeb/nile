@@ -20,6 +20,7 @@ const config: Config = {
         "primary-soft": "var(--color-primary-soft)",
         dark: "var(--color-dark)",
         accent: "var(--color-accent)",
+        whatsapp: "var(--color-whatsapp)",
         bg: "var(--color-bg)",
         surface: "var(--color-surface)",
         muted: "var(--color-muted)",

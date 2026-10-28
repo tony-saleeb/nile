@@ -1,19 +1,13 @@
-import { MessageCircle, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import { hotlineHref, whatsappHref } from "@/data/contact";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
 const focusRing =
   "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary";
 
 export function ActionButtons() {
   return (
-    <div className="flex flex-col gap-2">
-      <button
-        type="button"
-        className={`inline-flex w-full items-center justify-center rounded-button bg-accent px-4 py-3.5 text-base font-bold text-surface transition hover:opacity-90 ${focusRing}`}
-      >
-        اطلب العرض
-      </button>
-      <div className="grid grid-cols-2 gap-2">
+    <div className="grid grid-cols-2 gap-2">
         <a
           href={hotlineHref}
           className={`inline-flex items-center justify-center gap-2 rounded-button bg-dark px-3 py-3 text-sm font-bold text-surface no-underline transition hover:opacity-90 ${focusRing}`}
@@ -25,12 +19,11 @@ export function ActionButtons() {
           href={whatsappHref}
           target="_blank"
           rel="noopener noreferrer"
-          className={`inline-flex items-center justify-center gap-2 rounded-button bg-primary px-3 py-3 text-sm font-bold text-surface no-underline transition hover:opacity-90 ${focusRing}`}
+          className={`inline-flex items-center justify-center gap-2 rounded-button bg-whatsapp px-3 py-3 text-sm font-bold text-dark no-underline transition hover:opacity-90 ${focusRing}`}
         >
-          <MessageCircle className="h-4 w-4" aria-hidden="true" />
+          <WhatsAppIcon className="h-4 w-4" />
           واتساب
         </a>
-      </div>
     </div>
   );
 }

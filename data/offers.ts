@@ -11,6 +11,7 @@ export type Offer = {
   number: string;
   titleAr: string;
   image: string;
+  priceEgp?: string;
 };
 
 export const offers: Offer[] = Array.from({ length: 20 }, (_, index) => {

@@ -1,4 +1,5 @@
-import { MessageCircle, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { OfferGrid } from "@/components/OfferGrid";
 import { PageShell } from "@/components/PageShell";
 import { hotlineHref, hotlineNumber, whatsappHref } from "@/data/contact";
@@ -41,9 +42,9 @@ export default function HomePage() {
                   href={whatsappHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`inline-flex items-center gap-2 rounded-button bg-primary px-4 py-3 text-sm font-bold text-surface no-underline ${focusRing}`}
+                  className={`inline-flex items-center gap-2 rounded-button bg-whatsapp px-4 py-3 text-sm font-bold text-dark no-underline ${focusRing}`}
                 >
-                  <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                  <WhatsAppIcon className="h-4 w-4" />
                   واتساب
                 </a>
               </div>

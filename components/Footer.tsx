@@ -1,4 +1,5 @@
 import { hotlineHref, hotlineNumber, whatsappHref, whatsappNumber } from "@/data/contact";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
 type FooterProps = {
   pageNumber: number;
@@ -22,8 +23,9 @@ export function Footer({ pageNumber }: FooterProps) {
             href={whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className={`text-primary no-underline ${focusRing}`}
+            className={`inline-flex items-center gap-1.5 text-whatsapp no-underline ${focusRing}`}
           >
+            <WhatsAppIcon className="h-4 w-4" />
             واتساب {whatsappNumber}
           </a>
         </p>
