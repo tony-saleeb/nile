@@ -1,4 +1,4 @@
-export const heroImage = "/placeholders/hero.jpg";
+export const heroImage = "/nile-banner.jpeg";
 
 export const galleryImages = [
   "/placeholders/sample-1.jpg",
